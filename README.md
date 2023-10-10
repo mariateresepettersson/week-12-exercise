@@ -6,7 +6,9 @@
 
 # Poetry in Motion - A Themed Poem Display with useLayoutEffect
 
-This week, let's practice using the `useLayoutEffect` hook in our `App.jsx` file.
+In this week's team session, you will practice the use of the advanced hook useLayoutEffect in conjunction with the useState hook. You will engage in applying the principles and techniques we've absorbed over the week, working on the App.jsx file so no need to create individual components in this exercise 😉.
+
+The app.jsx content dynamically alters its display and style based on the current theme state.
 
 We will play with two themes, "light" and "dark", and each theme will have its own poem. Your job is to make a button that lets users switch between these themes. Changing the theme will also change the poem and the look of the page. This exercise will help you get better at choosing what to show based on the state, using React hooks to manage state, dealing with events, and using `useLayoutEffect` to handle side effects within the DOM layout :).
 
