@@ -26,12 +26,6 @@ npm i && code . && npm run dev
 
 ## Looking for some hints?
 
-### Fonts Used
-
-- Raleway - It's pre-installed for you.
-
-### Installing styled-components
-
 #### 1\. Initializing `useState` for 'theme'
 
 - You can see that the reactive variable using the `useState` hook is already provided within the `App.jsx` file.
