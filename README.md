@@ -1,12 +1,16 @@
 <h1 align="center">
   <a href="">
-    <img src="/src/assets/style-comps.svg" alt="Boiler Plate">
+    <img src="/src/assets/poem-uselayoutEffect.svg" alt="Boiler Plate">
   </a>
 </h1>
 
-# React Design Replication Exercise with Styled Components
+# Poetry in Motion - A Themed Poem Display with useLayoutEffect
 
-For this week's practice, you will replicate a given design using React and style it using Styled Components. Try to match the design closely using Styled Components for smooth styling.
+This week, let's practice using the `useLayoutEffect` hook in our `App.jsx` file.
+
+We will play with two themes, "light" and "dark", and each theme will have its own poem. Your job is to make a button that lets users switch between these themes. Changing the theme will also change the poem and the look of the page. This exercise will help you get better at choosing what to show based on the state, using React hooks to manage state, dealing with events, and using `useLayoutEffect` to handle side effects within the DOM layout :).
+
+Let’s have fun coding!
 
 ## Getting Started with the Project
 
@@ -47,7 +51,3 @@ npm i && code . && npm run dev
     javascriptCopy code
 
     `import styled from 'styled-components';`
-
-## Landing Page Demo
-
- <img src="/src/assets/doggie-bowls-landing.png" alt="Boiler Plate">
