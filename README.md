@@ -48,3 +48,8 @@ npm i && code . && npm run dev
 - Use ternary operators or logical AND `&&` operators to conditionally render elements or apply styles based on the `theme` state.
 - For displaying the poems, consider using a condition to check the current theme and render the corresponding poem accordingly.
 - To dynamically apply styles (like changing the color of text based on the theme), you might use inline styling with a condition to determine the style object.
+
+#### 5\. Checking out the styles.css file
+
+- body.light and body.dark are selectors that target the body element when it has the class of light or dark, respectively.
+- background-color and color properties within each class define the background and text colors for the respective themes.
