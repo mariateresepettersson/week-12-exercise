@@ -32,22 +32,26 @@ npm i && code . && npm run dev
 
 ### Installing styled-components
 
-1.  Installation Command: To add `styled-components` to your project, use one of the following commands:
+#### 1\. Initializing `useState` for 'theme'
 
-    - If you're using `npm`:
+- Start by declaring a state variable named `theme` and initialize it with the string "light".
+- Use the `useState` hook from React to create this state variable and its corresponding setter function.
 
-      bashCopy code
+#### 2\. Utilizing `useLayoutEffect` Hook
 
-      `npm install styled-components`
+- Implement the `useLayoutEffect` hook to manage the application of themes without causing flickering in the UI.
+- Inside the `useLayoutEffect`, set the `className` of the `body` element to the current theme. This will allow you to apply global styles based on the theme.
+- Ensure that the effect runs whenever the `theme` state changes by adding `theme` to the dependency array.
 
-    - If you're using `yarn`:
+#### 3\. Crafting the `toggleTheme` Function
 
-      bashCopy code
+- Define a function named `toggleTheme` that will be responsible for switching between the "light" and "dark" themes.
+- Within `toggleTheme`, use the setter function from `useState` to update the `theme` state based on its previous value. If it was "light", change it to "dark" and vice versa.
+- Consider using a function within the setter to ensure you're toggling based on the accurate previous state.
 
-      `yarn add styled-components`
+#### 4\. Conditionally Rendering Elements in JSX
 
-2.  Usage in Project: After installation, you can start using it in your React components by importing:
-
-    javascriptCopy code
-
-    `import styled from 'styled-components';`
+- In your JSX return statement, utilize curly braces `{}` to embed JavaScript expressions.
+- Use ternary operators or logical AND `&&` operators to conditionally render elements or apply styles based on the `theme` state.
+- For displaying the poems, consider using a condition to check the current theme and render the corresponding poem accordingly.
+- To dynamically apply styles (like changing the color of text based on the theme), you might use inline styling with a condition to determine the style object.
