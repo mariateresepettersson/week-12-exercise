@@ -34,8 +34,7 @@ npm i && code . && npm run dev
 
 #### 1\. Initializing `useState` for 'theme'
 
-- Start by declaring a state variable named `theme` and initialize it with the string "light".
-- Use the `useState` hook from React to create this state variable and its corresponding setter function.
+- You can see that the reactive variable using the `useState` hook is already provided within the `App.jsx` file.
 
 #### 2\. Utilizing `useLayoutEffect` Hook
 
